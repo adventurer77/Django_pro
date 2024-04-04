@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'app_1.apps.App1Config',
     'app_2.apps.App2Config',
+    'articles.apps.ArticlesConfig',
 ]
 
 MIDDLEWARE = [

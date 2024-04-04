@@ -7,12 +7,14 @@
 </head>
 <body>
     <ol>
-        {% comment %} <li><a href="index/">Home</a></li>
-        <li><a href="app_1/">App 1</a></li>
-        <li><a href="app_2/">App 2</a></li> {% endcomment %}
-        <li><a href={% url "index" %}>Home</a></li>
-        <li><a href={% url "app_1" %}>App 1</a></li>
+        
+        {% comment %} <li><a href={% url "index" %}>Home</a></li> {% endcomment %}
+        {% comment %} <li><a href={% url "app_1" %}>App 1</a></li>
         <li><a href={% url "app_2" %}>App 2</a></li>
+         {% endcomment %}
+        <li><a href={% url "app_1:index" %}>App 1</a></li>
+        <li><a href={% url "app_2:index" %}>App 2</a></li>
+        <li><a href={% url "articles_by_year" year=2023 %}>Articles</a></li>
     </ol>
     
 </body>
