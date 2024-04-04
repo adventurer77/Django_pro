@@ -3,5 +3,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def app_2(request):
-    return HttpResponse('<h1>App 2</h1>')
+# def app_2(request):
+#     return HttpResponse('<h1>App 2</h1>')
+
+def index(request):
+    return HttpResponse("<h1>App 2</h1>")
